@@ -100,7 +100,7 @@ jobs:
       - name: Move files to publish directory
         run: |
           mkdir -p publish
-          install -p {apple,icloud,google,proxy,direct,reject,private,gfw,greatfire,tld-not-cn,cncidr,lancidr,telegramcidr}.txt ./publish/
+          install -p {apple,icloud,google,proxy,direct,reject,private,gfw,greatfire,tld-not-cn,cncidr,lancidr,telegramcidr,applications}.txt ./publish/
 
       - name: Release and upload assets
         uses: softprops/action-gh-release@v0.1.6
